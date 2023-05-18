@@ -278,8 +278,25 @@ nav ul li button:hover{
     cursor: pointer;
 }
 
+@media screen and (max-width: 1350px) {
 
+    .text-ctr .text-title{
+        margin-top: 5rem;
+    }
 
+    .text-title h2{
+        font-size: 1.5rem;
+    }
+
+    .text-title p{
+        font-size: 1rem;    
+    }
+
+    .hidden-skills{
+        display: none;
+    }
+
+}
 
 @media screen and (max-width: 690px) {
     .intro .greeting p{
@@ -297,4 +314,45 @@ nav ul li button:hover{
     .info h2{
         font-size: 1rem;
     }
+
+
+    .projects .grid-cnt{
+        margin: 0% 5% 3rem 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "main"
+        "p1"
+        "p2"
+        "p3";
+    }
+
+    .box{
+        height: 15rem;
+    }
+
+    .box .text-ctr{
+        padding: 10px;
+    }
+
+    .text-ctr .text-title{
+        margin-top: 3rem;
+    }    
+    
+    .text-ctr b{
+        font-size: .75rem;
+    }
+
+    .text-title h2{
+        font-size: 1.5rem;
+    }
+    
+    .text-title p{
+        font-size: .75rem;    
+    }
+    
+    .text-title a{
+        font-size: .75rem;
+    }
+
   }
