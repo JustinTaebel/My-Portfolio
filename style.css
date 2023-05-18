@@ -1,0 +1,164 @@
+body {
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/computerGIF2.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10% 0 10%;
+
+}
+
+.name{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.name span{
+    color: #008AD8;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s
+}
+
+nav ul li a:hover{
+    color: blue;
+}
+
+nav ul li button{
+    border: none;
+    color: white;
+    background-color: blue;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+nav ul li button:hover{
+    cursor: pointer;
+    color: lightgray;
+    transform: scale(1.2);
+}
+
+.intro {
+    display: flex;
+}
+
+.intro .links a{
+    color: white;
+    text-decoration: none;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+.info {
+    display: inline-block;
+    margin: 7% 45% 10% 10%;
+}
+
+.info p{
+    color: #008AD8;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.info h1{
+    margin: 0;
+    font-size: 4rem;
+    overflow: hidden;
+}
+
+.info h1 span{
+    color: #008AD8;
+}
+
+.info h2{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.skills{
+    padding: 20px;
+}
+
+.skills h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.skills h1 span{
+    color: #008AD8;
+}
+
+.skills-cnt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 80px;
+}
+
+.skill-box{
+    height: 16rem;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    background-color: #222;
+    border-radius: 5px;
+}
+
+.skill-box p{
+    width: 20rem;
+    color: #ddd;
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-title h3{
+    margin: 0.5rem;
+    font-size: 150%;
+}
+
+.skill-icon{
+    width: 75px;
+}
+
+
