@@ -27,7 +27,6 @@ nav{
     color: white;
     font-size: 30px;
     letter-spacing: 2px;
-    font-family: 'Oswald', sans-serif;
 }
 
 .name span{
@@ -70,9 +69,14 @@ nav ul li button:hover{
 
 .intro {
     display: flex;
+    display: inline-block;
 }
 
-.intro .links a{
+.intro .greeting {
+    margin: 7% 10% 0% 10%;
+}
+
+.info .links a{
     color: white;
     text-decoration: none;
     padding-right: 1rem;
@@ -80,24 +84,23 @@ nav ul li button:hover{
 }
 
 .info {
-    display: inline-block;
-    margin: 7% 45% 10% 10%;
+    margin: 0% 45% 0% 10%;
 }
 
-.info p{
+.intro .greeting p{
     color: #008AD8;
     margin: 0;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.info h1{
+.intro .greeting h1{
     margin: 0;
     font-size: 4rem;
     overflow: hidden;
 }
 
-.info h1 span{
+.intro .greeting h1 span{
     color: #008AD8;
 }
 
@@ -162,3 +165,20 @@ nav ul li button:hover{
 }
 
 
+@media screen and (max-width: 690px) {
+    .intro .greeting p{
+        font-size: 1.5rem;
+    }
+    
+    .intro .greeting h1{
+        font-size: 2rem;
+    }
+    
+    .info {
+        margin: 0% 10% 0% 10%;
+    }
+    
+    .info h2{
+        font-size: 1rem;
+    }
+  }
