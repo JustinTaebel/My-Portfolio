@@ -69,14 +69,9 @@ nav ul li button:hover{
 
 .intro {
     display: flex;
-    display: inline-block;
 }
 
-.intro .greeting {
-    margin: 7% 10% 0% 10%;
-}
-
-.info .links a{
+.intro .links a{
     color: white;
     text-decoration: none;
     padding-right: 1rem;
@@ -84,23 +79,24 @@ nav ul li button:hover{
 }
 
 .info {
-    margin: 0% 45% 0% 10%;
+    display: inline-block;
+    margin: 7% 45% 10% 10%;
 }
 
-.intro .greeting p{
+.info p{
     color: #008AD8;
     margin: 0;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.intro .greeting h1{
+.info h1{
     margin: 0;
     font-size: 4rem;
     overflow: hidden;
 }
 
-.intro .greeting h1 span{
+.info h1 span{
     color: #008AD8;
 }
 
@@ -165,21 +161,3 @@ nav ul li button:hover{
 }
 
 
-@media screen and (max-width: 690px) {
-    .intro .greeting p{
-        font-size: 1.5rem;
-    }
-    
-    .intro .greeting h1{
-        font-size: 2rem;
-    }
-    
-    .info {
-        margin: 0% 10% 0% 10%;
-    }
-    
-    .info h2{
-        font-size: 1rem;
-
-    }
-  }
