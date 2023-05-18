@@ -276,11 +276,6 @@ nav ul li button:hover{
     font-size: 1rem;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.5s;
-}
-
-.text-title a:hover{
-    color: #aaa;
 }
 
 
