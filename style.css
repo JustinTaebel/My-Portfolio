@@ -7,6 +7,10 @@ body {
     color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hero {
     height: 100vh;
     width: 100%;
@@ -67,6 +71,10 @@ nav ul li button:hover{
     transform: scale(1.2);
 }
 
+nav ul li button a:hover{
+    color: lightgray;
+}
+
 .intro {
     display: flex;
     display: inline-block;
@@ -105,11 +113,11 @@ nav ul li button:hover{
     color: white;
 }
 
-.skills{
+#skills{
     padding: 20px;
 }
 
-.skills h1{
+#skills h1{
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -157,13 +165,13 @@ nav ul li button:hover{
 }
 
 
-.projects h1{
+#projects h1{
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;
 }
 
-.projects .grid-cnt{
+#projects .grid-cnt{
     margin: 0% 10% 3rem 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -174,19 +182,19 @@ nav ul li button:hover{
     grid-gap: 20px;
 }
 
-.projects .main {
+#projects .main {
     grid-area: main;
 }
 
-.projects .p1 {
+#projects .p1 {
     grid-area: p1;
 }
 
-.projects .p2 {
+#projects .p2 {
     grid-area: p2;
 }
 
-.projects .p3 {
+#projects .p3 {
     grid-area: p3;
 }
 
@@ -279,6 +287,111 @@ nav ul li button:hover{
     cursor: pointer;
 }
 
+#container {
+    margin: 0% 10% 0% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .1fr;
+    grid-template-areas:
+    "title1 title2 "
+    "about1 contact1";
+    grid-gap: 20px;
+}
+
+#about-me{
+    padding: 40px;
+}
+
+#about-me h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    grid-area: title1;
+}
+
+#about-me p{
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 40px;
+    background-color: #222;
+    border-radius: 5px;
+    grid-area: about1;
+}
+
+#contact-me{
+    padding: 40px;
+}
+
+#contact-me h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: right;
+    grid-area: title2;
+}
+
+.contact-form{
+    padding: 40px;
+    background: #222;
+    border-radius: 5px;
+    grid-area: contact1;
+}
+
+.contact-form h2{
+    font-size: 30px;
+    color: #ddd;
+}
+
+.contact-form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .inputBox input,
+.contact-form .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    border-radius: 2px;
+    outline: none;
+    resize: none;
+    background-color: #666;
+    color: white;
+}
+
+.contact-form .inputBox span{
+    position: absolute;
+    font-weight: 200%;
+    left: 0;
+    padding: 5px 0;
+    padding-left: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #ddd;
+}
+
+.contact-form .inputBox input:focus ~ span,
+.contact-form .inputBox input:valid ~ span,
+.contact-form .inputBox textarea:focus ~ span,
+.contact-form .inputBox textarea:valid ~ span{
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .inputBox input[type="submit"] {
+    background: #008AD8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 1350px) {
 
     .text-ctr .text-title{
@@ -295,6 +408,32 @@ nav ul li button:hover{
 
     .hidden-skills{
         display: none;
+    }
+
+    #container {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .1fr .1fr 0fr 0fr;
+        grid-template-areas:
+        "title1"
+        "about1"
+        "title2"
+        "contact1";
+        grid-gap: 20px;
+    }
+
+    #about-me h1{
+        text-align: center;
+    }
+
+    #about-me p{
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #contact-me h1{
+        text-align: center;
     }
 
 }
@@ -317,7 +456,7 @@ nav ul li button:hover{
     }
 
 
-    .projects .grid-cnt{
+    #projects .grid-cnt{
         margin: 0% 5% 3rem 5%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
