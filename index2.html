@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <title>Justin Taebels Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js" defer></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="hero">
+
+        <div class="intro">
+            <h1 data-tab-target=".home">ABOUT <span>ME</span></h1>
+            <ul>
+                <li data-tab-target=".edu" class="tabs">Education</li>
+                <li data-tab-target=".per" class="tabs">Personality</li>
+                <li data-tab-target=".goal" class="tabs">Goals</li>
+                <li class="tabs"><a href="/index.html">Home</a></li>
+            </ul>
+        </div>
+
+        <div class="sm-monitor">
+            <div class="home active" data-tab-content>
+                <h2>Hello!</h2>
+                <b>Click one of the options above to learn about me!</p>
+            </div>
+            <div class="edu" data-tab-content>
+                <h2>Education</h2>
+            </div>
+            <div class="per" data-tab-content>
+                <h2>Personality</h2>
+            </div>
+            <div class="goal" data-tab-content>
+                <h2>Goals</h2>
+            </div>
+        </div>
+        <div class="bg-monitor">
+            <div class="overlay"></div>
+            <div class="txt-monitor home active" data-tab-content>
+                <img src="./img/Town.gif" alt="">
+                <h1>I Am <span class="typed-txt"></span></h1>
+                <p>Results-driven Computer Science Student with a passion for Cyber-Security. Skilled in multiple programming languages and experienced in software development. Seeking opportunities to apply my knowledge and contribute to the field of technology.</p>
+            </div>
+            <div class="txt-monitor edu" data-tab-content>
+                <h1>Education</h1>
+            </div>
+            <div class="txt-monitor per" data-tab-content>
+                <h1>Personality</h1>
+            </div>
+            <div class="txt-monitor goal" data-tab-content>
+                <h1>Goals</h1>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    var typed = new Typed('.typed-txt', {
+        strings: [" Justin^3000", "A Developer", "An Engineer"],
+        typeSpeed: 150,
+        backSpeed: 75,
+        loop: true
+    })
+</script>
+</html>
