@@ -311,6 +311,7 @@ nav ul li button a:hover{
 
 #about-me p{
     font-size: 1.3rem;
+    font-weight: bold;
     text-align: left;
     padding: 40px;
     background-color: #222;
