@@ -137,7 +137,6 @@ nav ul li button a:hover{
     height: 16rem;
     padding: 1rem;
     margin: 1rem;
-    cursor: pointer;
     background-color: #222;
     border-radius: 5px;
 }
@@ -276,6 +275,11 @@ nav ul li button a:hover{
     padding-right: 25px;
     font-weight: bold;
     
+}
+
+.text-title p1{
+    margin: 0;
+    font-size: .75rem;
 }
 
 .text-title a{
