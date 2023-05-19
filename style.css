@@ -334,67 +334,22 @@ nav ul li button a:hover{
     grid-area: title2;
 }
 
-.contact-form{
-    padding: 40px;
-    background: #222;
-    border-radius: 5px;
-    grid-area: contact1;
+.contact-cnt{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 200%;
 }
 
-.contact-form h2{
-    font-size: 30px;
-    color: #ddd;
+.contact-cnt a{
+    color: #008AD8;
+    margin-right: 1rem;
 }
 
-.contact-form .inputBox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.contact-form .inputBox input,
-.contact-form .inputBox textarea{
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #333;
-    border-radius: 2px;
-    outline: none;
-    resize: none;
-    background-color: #666;
-    color: white;
-}
-
-.contact-form .inputBox span{
-    position: absolute;
-    font-weight: 200%;
-    left: 0;
-    padding: 5px 0;
-    padding-left: 5px;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #ddd;
-}
-
-.contact-form .inputBox input:focus ~ span,
-.contact-form .inputBox input:valid ~ span,
-.contact-form .inputBox textarea:focus ~ span,
-.contact-form .inputBox textarea:valid ~ span{
-    font-size: 12px;
-    transform: translateY(-20px);
-}
-
-.contact-form .inputBox input[type="submit"] {
-    background: #008AD8;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
+.contact-cnt h2{
+    font-size: 125%;
+    text-align: right;
+    text-transform: uppercase;
 }
 
 #footer{
