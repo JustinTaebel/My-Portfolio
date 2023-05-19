@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
-.hero {
+#hero {
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/computerGIF2.gif);
@@ -390,6 +390,20 @@ nav ul li button a:hover{
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+}
+
+#footer{
+    padding: 2rem;
+    background-color: #008AD8;
+    text-align: center;
+}
+
+#footer a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1350px) {
